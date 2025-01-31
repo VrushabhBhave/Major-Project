@@ -16,7 +16,12 @@
     .intro .left{ 
         width: 100vw;
     }
-
+    .intro .right{
+        width: 90vw;
+    }
+    .intro .right-img{
+        width: 100%;
+    }
     #cards{
         padding: 0 5rem;
     }
@@ -57,6 +62,11 @@
 }
 
 @media screen and (max-width: 740px){
+    header{
+        padding-top: 5rem;
+        padding-bottom: 5rem; 
+    }
+
     #navbar{
         flex-direction: column;
         justify-content: flex-start;
