@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans" , sans-serif; 
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR DESIGN  */
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: transparent;
+    background-color: #113448;
+    z-index: 9999;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul a{
+    text-decoration: none;
+    padding: 0 0.8rem;
+    color: #ffffff;
+    font-size: 4px 12px;
+    font-family: "Open Sans" , sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#navbar ul a:hover{
+    color: #14bf98;
+}
+
+#navbar ul a i{
+    padding: 2px;
+    font-size: 11px;
+}
+
+.hexagon {
+    position: relative;
+    height: 1.4rem;
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: #14bf98;
+    margin: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon a{
+    position: absolute;
+}
+
+.hexagon i{
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.hexagon:hover,.hexagon i:hover{
+    background-color: white;
+    color: #14bf98;
+}
+
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url(images/header-background.jpg) no-repeat center center/cover;
+    padding-top: 21rem;
+    padding-bottom: 20rem;
+}
+
+/* HEADER CONTENT  */
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content .container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container h1{
+    font-size: 3.6rem;
+    line-height: 1.2;
+}
+
+.container p{
+    font-size: 1.1rem;
+    margin: 0 5rem 2rem 5rem;
+    /* padding: 0.5rem 0.5rem;  */
+}
+
+.container button{
+    padding: 1rem 2.5rem;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: #14bf98;
+    border: none;
+    border-radius: 5px;
+}
+
+.container button:hover{
+    background-color: transparent;
+    border: 2px solid #14bf98;
+}
+
+.container h1 span::after{
+    content: "";
+    /* position: relative; */
+    animation: blink 5s ease-out infinite;
+}
+
+@keyframes blink {
+    0%{
+        content: "SERVICES";
+        opacity: 1;
+    }20%{
+        opacity: 0;
+    }40%{
+        content: "SOLUTIONS";
+        opacity: 1;
+    }60%{
+        opacity: 0;
+    }80%{
+        content: "TEMPLATES";
+        opacity: 1;
+    }100%{
+        opacity: 1;
+    }
+}
+
+/* INRTO SECTION  */
+
+/* LEFT SIDE  */
+.intro{
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.intro .left{
+    width: 45vw;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.intro .left h1{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #484a46;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-family: "Montserrat",sans-serif;
+}
+
+.intro .left span{
+    color: #14bf98;
+}
+
+.intro .left .p1{
+    color: #787976;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.intro .left .p2{
+    color: #787976;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.intro .left .p3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #484a46;
+    font-family: "Montserrat",sans-serif;
+}
+
+/* RIGHT SIDE  */
+
+.intro .right{
+    width: 55vw;
+}
+
+.intro .right-img{
+    width: 90%;
+    overflow: hidden;
+}
+
+.intro img{
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.intro img:hover{
+    transform: scale(1.15);
+}
+
+/* CARDS  */
+
+
+.hexagon-2 {
+    height: 90px;
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background-color: #14bf98;
+}
+
+#cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 90vw;
+    padding: 0 10rem;
+}
+
+#cards h2{
+    color: #484a46;
+    font-family: "Montserrat",sans-serif;
+    font-size: 20px;
+}
+
+#cards .card{
+    margin-left: 0.5rem;
+    width: 30vw;
+}
+
+.card h2{
+    padding: 1.3rem 0;
+}
+
+.card p{
+    padding-right: 1rem; 
+    color: #787976;
+}
+
+#cards .card-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+#cards .card-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+#cards .card-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
