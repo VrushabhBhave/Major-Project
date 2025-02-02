@@ -828,12 +828,13 @@ header {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   height: 3rem;
-  padding-left: 1.3125rem;
+  padding-left: 0.8rem;
   background-color: #2A5D77;
   border: 1px solid #39728f;
   border-radius: 0.25rem;
   color: #fff;
   transition: all 0.3s;
+  font-size: 1rem;
 }
 
 #callMe .right .field span{
@@ -858,4 +859,89 @@ header {
   font-size: 12px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+}
+
+/* PROJECT */
+#project{
+  padding-top: 6.5rem;
+  padding-bottom: 7rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#project .container .heading .title{
+  color:#14bf98;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#project .container .heading .project-heading{
+  color:#484a46;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 3.3rem;
+}
+
+#project .container .content .buttons{
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+#project .container .content .buttons .btn{
+  padding: 6px 18px;
+  background-color: #f1f4f7; 
+  color: #7b7e85;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 12px;
+}
+
+#project .container .content .buttons .btn:hover{
+  background-color:#14bf98;
+  color: white;
+}
+
+#project .container .content .album{
+  margin: auto;
+  display: grid;
+  width: 80vw;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto auto auto auto;
+}
+
+/* #project .container .content .album .background{
+  width: 20vw;
+  background: black no-repeat center center / cover;
+  overflow: hidden;
+} */
+
+#project .container .content .album .background .img{
+  width: 20vw;
+  overflow: hidden;
+}
+
+#project .container .content .album .background img{
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  transition: all 0.7s;
+}
+
+#project .container .content .album .background img:hover{
+  transform: scale(1.15);
 }
