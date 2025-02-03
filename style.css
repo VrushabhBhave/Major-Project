@@ -1223,7 +1223,6 @@ header {
   right: 15px;
   bottom: 10px;
   scroll-behavior: smooth;
-  display: none;
 }
 
 #scroll a i{
