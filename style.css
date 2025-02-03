@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+html{
   scroll-behavior: smooth;
 }
 
@@ -127,30 +129,18 @@ header {
 
 .container h1 span::after {
   content: "";
-  animation: blink 5s ease-out infinite;
+  animation: blink 4s ease-out infinite;
 }
 
 @keyframes blink {
   0% {
     content: "SERVICES";
-    opacity: 1;
   }
-  20% {
-    opacity: 0;
-  }
-  40% {
+  50% {
     content: "SOLUTIONS";
-    opacity: 1;
   }
-  60% {
-    opacity: 0;
-  }
-  80% {
+  100% { 
     content: "TEMPLATES";
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -1161,4 +1151,82 @@ header {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+
+/* FOOTER  */
+#footer{
+  padding-top: 5rem;
+  background-color: #113448;
+}
+
+#footer .footer-container{
+  margin: 0 11.812rem;
+  display: flex;
+  gap: 3rem;
+}
+
+#footer .footer-container .footer-para{
+  width: 30vw;
+}
+
+#footer .footer-container h4{
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#footer .footer-container .footer-para p{
+  color: #DFE5EC;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#footer .footer-container ul{
+  list-style: none;
+}
+#footer .footer-container ul li{
+  margin-bottom: 0.5rem;
+}
+#footer .footer-container ul li a{
+  color: #DFE5EC;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+}
+
+/* COPYRIGHT  */
+.copyright{
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.copyright .container .copy-para{
+  color:#DFE5EC;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* SCROLL  */
+#scroll{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14bf98;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 10px;
+  scroll-behavior: smooth;
+  display: none;
+}
+
+#scroll a i{
+  font-size: 25px;
+  color: white;
 }
