@@ -919,29 +919,150 @@ header {
 #project .container .content .album{
   margin: auto;
   display: grid;
-  width: 80vw;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: auto auto auto auto;
+  width: 70vw;
+  grid-template-columns: repeat(auto-fit,minmax(261px,1fr));
+  justify-content: center;
 }
 
-/* #project .container .content .album .background{
-  width: 20vw;
-  background: black no-repeat center center / cover;
-  overflow: hidden;
-} */
-
 #project .container .content .album .background .img{
-  width: 20vw;
+  width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 #project .container .content .album .background img{
   width: 100%;
   cursor: pointer;
   display: block;
-  transition: all 0.7s;
+  transition: all 0.6s;
 }
 
-#project .container .content .album .background img:hover{
+#project .container .content .album .background .img .img-content{
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.6s;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+#project .container .content .album .background .img:hover img{
   transform: scale(1.15);
+}
+
+#project .container .content .album .background .img:hover .img-content{
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+
+/* OUR TEAM  */
+#ourTeam{
+  padding-top: 6.3rem;
+  padding-bottom: 3.5rem;
+  background-color: #fbfbfb;
+  text-align: center;
+}
+
+#ourTeam .content{
+  margin: 0 12rem;
+  padding: 0 1rem;
+}
+
+#ourTeam .content h2{
+  color:#484a46;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.9rem;
+}
+
+#ourTeam .content p{
+  color: rgb(120, 121, 118);
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin:0 15.56rem;
+  margin-bottom: 3.5rem;
+}
+
+
+
+.team{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.member {
+  height: 180px; 
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+}
+
+.outer-div{
+  height: 180px;
+  width: 207px;
+  transition: 1s;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.member-1{
+  background: url(images/team/team-1.png) no-repeat center center / cover;
+  transition: 1s;
+}
+
+.member-2{
+  background: url(images/team/team-2.png) no-repeat center center / cover;
+  transition: 1s;
+}
+
+.member-3{
+  background: url(images/team/team-3.png) no-repeat center center / cover;
+  transition: 1s;
+}
+
+.member-4{
+  background: url(images/team/team-4.png) no-repeat center center / cover;
+  transition: 1s;
+}
+
+.member:hover{
+  transform: scale(1.15);
+}
+
+#ourTeam .team .member1 .info .name{
+  color: #787976;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  margin-bottom: 2px;
+  display: block;
+}
+
+#ourTeam .team .member1 .info .des{
+  color: rgb(72, 74,40);
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;  
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+#ourTeam .team .member1 .info .icon{
+  display: flex;
+  justify-content: center;
 }

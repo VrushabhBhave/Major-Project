@@ -34,6 +34,13 @@
         margin-left: 2rem;
         margin-right: 1rem;
     }
+
+
+    /* Our Team  */
+    #ourTeam .content{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -61,6 +68,11 @@
 
     #details-2 .left-area-2{
         width: 85vw;
+    }
+
+    /* Our Team  */
+    #ourTeam .content .heading p{
+        margin: 2rem 9.375rem;
     }
 }
 
@@ -180,6 +192,11 @@
     .box {
         width: 85%;
     }
+
+    /* Our Team  */
+    #ourTeam .content .heading p{
+        margin: 2rem 3.125rem;
+    }
 }
 
 @media screen and (max-width: 482px){
@@ -211,5 +228,14 @@
 
     #details-2 .left-area-2 {
         margin-left: 2rem;
+    }
+
+    /* my Team  */
+    #ourTeam .content{
+        margin: 2rem 0rem;
+    }
+
+    #ourTeam .content .heading p{
+        margin: 2rem 0rem;
     }
 }
