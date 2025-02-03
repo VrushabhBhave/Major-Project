@@ -41,6 +41,11 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
+    /* About */
+    #about .inner-div{
+        margin: 0 6.25rem;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -107,6 +112,19 @@
     /* SWIPER  */
     #swiper .container{
         width: 90vw;
+    }
+
+    #about .inner-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .inner-div .left{
+        width: 80vw;
+    }
+
+    #about .inner-div .right{
+        width: 80vw;
     }
 
 }
