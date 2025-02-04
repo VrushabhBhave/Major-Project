@@ -851,6 +851,12 @@ header {
   font-family: "Montserrat", sans-serif;
 }
 
+#callMe .right .field button:hover{
+  background-color: transparent;
+  border: 1px solid #14bf98;
+  color:#14bf98;
+}
+
 /* PROJECT */
 #project{
   padding-top: 6.5rem;
@@ -1208,6 +1214,207 @@ header {
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   margin-bottom: 1rem;
+}
+
+/* CONTACT  */
+#contact{
+  padding-top: 6.875rem;
+  padding-bottom: 5.625rem;
+  background-color: #fbfbfb;
+}
+
+#contact .contact-container{
+  padding: 0 11.125rem;
+}
+
+#contact .contact-container .contact-row{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+#contact .contact-container .contact-row .contact-left .contact-title{
+  color:#14bf98;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+#contact .contact-container .contact-row .contact-left h2{
+  color:#484a46;
+  font-size: 1.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.375rem;
+}
+
+#contact .contact-container .contact-row .contact-left p{
+  color:#787976;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#contact .contact-container .contact-row .contact-left ul{
+  list-style: none;
+  margin-bottom: 2.3rem;
+}
+
+#contact .contact-container .contact-row .contact-left ul .list-1{
+  color: #787976;
+  font-size: 1rem;
+  font-family: "Open Sans",sans-serif;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
+#contact .contact-container .contact-row .contact-left ul a{
+  color: #787976;
+  font-size: 1rem;
+  font-family: "Open Sans",sans-serif;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
+#contact .contact-container .contact-row .contact-left ul .list{
+  display: inline-block;
+}
+
+#contact .contact-container .contact-row .contact-left ul i{
+  margin-right: 0.5rem;
+  color:#14bf98;
+}
+
+#contact .contact-container .contact-row .contact-left h3{
+  color: #484A46;
+  font-size: 1.375rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.social-media{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-hexagon {
+  position: relative;
+  height: 45px;
+  aspect-ratio: 1 / cos(30deg);
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+  background: #14bf98;
+  margin: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hexagon i{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contact-hexagon:hover,.contact-hexagon i:hover{
+  background: white;
+  color: #14bf98;
+  cursor: pointer;
+}
+
+/* Contact-form */
+#contact .contact-right{
+  width: 40vw;
+}
+#contact .contact-left{
+  width: 40vw;
+}
+
+
+#contact .contact-container .contact-row .contact-right .field{
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+
+#contact .contact-container .contact-row .contact-right .input{
+  display: block;
+  width: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.3125rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  color: #787976;
+  transition: all 0.3s;
+  border: 1px solid #dadada;
+}
+
+#contact .contact-container .contact-row .contact-right .input:hover{
+  border: 1px solid black;
+}
+
+#contact .contact-container .contact-row .contact-right .field label{
+  position: absolute;
+  color: #787976;
+  left: 1rem;
+  top: 0.62rem;
+  cursor: text;
+  transition: 0.2s ease all;
+}
+
+#contact .contact-container .contact-row .contact-right .field .input:focus ~ label,
+#contact .contact-container .contact-row .contact-right .field .input:valid ~ label {
+  font-size: 13px;
+  top: 0px;
+}
+
+#contact .contact-container .contact-row .contact-right textarea{
+  display: block;
+  width: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.3125rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  color: #787976;
+  transition: all 0.3s;
+  border: 1px solid #dadada;
+  height: 8rem;
+}
+
+#contact .contact-container .contact-row .contact-right .field textarea:focus ~ label,
+#contact .contact-container .contact-row .contact-right .field textarea:valid ~ label {
+  font-size: 13px;
+  top: 0px;
+}
+
+#contact .contact-container .contact-row .contact-right .field span{
+  color: #787976;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+}
+
+#contact .contact-container .contact-row .contact-right .field span a{
+  color: #787976;
+}
+
+#contact .contact-right .field button{
+  width: 100%;
+  height: 3.12rem;
+  border: 0.125rem solid #14bf98;
+  border-radius: 0.25rem;
+  background-color: #14bf98;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact .contact-right .field button:hover{
+  background-color: transparent;
+  border: 1px solid #14bf98;
+  color:#14bf98;
 }
 
 /* SCROLL  */

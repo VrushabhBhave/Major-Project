@@ -51,6 +51,11 @@
     #footer .footer-container{
         margin: 0 6.25rem;
     }
+
+    /* CONTACT  */
+    #contact .contact-container{
+        padding: 0 1rem;
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -181,6 +186,19 @@
     }
     #callMe .right{
         width: 90%;
+    }
+
+    /* CONTACT  */
+    #contact .contact-container .contact-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .contact-right{
+        width: 80vw;
+    }
+    #contact .contact-left{
+        width: 80vw;
     }
 }
 
