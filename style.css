@@ -1430,6 +1430,13 @@ header {
   right: 15px;
   bottom: 10px;
   scroll-behavior: smooth;
+  opacity: 0;
+  transition: all .7s;
+}
+
+#scroll.active{
+  bottom: 32px;
+  opacity: 1;
 }
 
 #scroll a i{

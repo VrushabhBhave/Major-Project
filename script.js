@@ -24,3 +24,14 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
   });
+
+
+  const toTop = document.querySelector("#scroll");
+
+  window.addEventListener("scroll", () =>{
+    if(window.scrollY > 300){
+      toTop.classList.add("active");
+    }else{
+      toTop.classList.remove("active");
+    }
+  })
