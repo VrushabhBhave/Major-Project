@@ -49,6 +49,13 @@ html{
   font-size: 11px;
 }
 
+#navbar .burger{
+  color: white;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+}
+
 .hexagon {
   position: relative;
   height: 1.4rem;

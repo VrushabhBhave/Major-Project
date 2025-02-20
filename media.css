@@ -221,23 +221,27 @@
     }
 }
 
-@media screen and (max-width: 740px){
+@media screen and (min-width: 770px){
+    #navbar .burger{
+        display: none;
+    }
+}
+@media screen and (max-width: 770px){
     header{
         padding-top: 5rem;
         padding-bottom: 5rem; 
     }
 
     #navbar{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #navbar img{
         padding: 0.5rem;
     }
 
-    #navbar ul{
+    #navbar ul li{
         display: none;
     }
 

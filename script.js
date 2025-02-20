@@ -34,4 +34,4 @@ var swiper = new Swiper(".mySwiper", {
     }else{
       toTop.classList.remove("active");
     }
-  })
+  });
