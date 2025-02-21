@@ -35,3 +35,12 @@ var swiper = new Swiper(".mySwiper", {
       toTop.classList.remove("active");
     }
   });
+
+
+  const button = document.querySelector(".burger");
+  const icon = document.querySelector("button i");
+  button.addEventListener("click", () => {
+    console.log("clicked on button");
+      icon.classList.toggle("fa-bars");
+      icon.classList.toggle("fa-xmark");
+  })
